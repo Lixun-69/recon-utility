@@ -1,0 +1,1 @@
+module.exports.customHelp = require('./data/class/customHelp');
