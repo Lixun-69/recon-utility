@@ -41,19 +41,19 @@ function customHelp(client, message, input, prefix) {
         })
     }
 
-    let info = `\`Command Name\` - \`${cmd.name || 'None'}\`\n`;
+    let info = `**Command Name** - \`${cmd.name || 'None'}\`\n`;
 
     if (cmd.aliases) {
-        info += `\`Aliases\` - \`${cmd.aliases.map((a) => `\`${a}\``).join(" | ")}\n`;
+        info += `**Aliases** - \`${cmd.aliases.map((a) => `\`${a}\``).join(" | ")}\n`;
     }
 
     info += 
-    `\`Description\` - \`${cmd.description || 'No Description.'}\`
+    `**Description** - \`${cmd.description || 'No Description.'}\`
     
-    \`Category\` - \` ${cmd.category || 'No category'}
+    **Category** - \`${cmd.category || 'No category'}\`
 
-    \`Usage\` - \`${prefix + cmd.usage || prefix + cmd.name}
-    \`Usage Syntax\` - \`<> = required, [] = options\`
+    **Usage** - \`${prefix + cmd.usage || prefix + cmd.name}
+    **Usage Syntax** - \`<>\` = required, \`[]\` = optional
     `;
 
     return message.channel.send("", {
