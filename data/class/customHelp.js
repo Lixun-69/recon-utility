@@ -44,7 +44,7 @@ function customHelp(client, message, input, prefix) {
     let info = `**Command Name** - \`${cmd.name || 'None'}\`\n`;
 
     if (cmd.aliases) {
-        info += `**Aliases** - \`${cmd.aliases.map((a) => `\`${a}\``).join(" | ")}\`\n`;
+        info += `**Aliases** - ${cmd.aliases.map((a) => `\`${a}\``).join(" | ")}\n`;
     }
 
     info += 
