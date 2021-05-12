@@ -1,5 +1,4 @@
 const { Client, Message, MessageEmbed } = require('discord.js');
-const colour = require('cdcolours');
 
 /**
  * A function to help an embed of a command
@@ -13,19 +12,19 @@ const colour = require('cdcolours');
 
 function customHelp(client, message, input, prefix) {
     if (!client || !(client instanceof Client)) {
-        return console.log(colour('[Lixun] => There is not an instance or correct instance of a Discord Client'), { textColour: 'red' })
+        throw new Error('[Lixun] => There is not an instance or correct instance of a Discord Client')
     };
 
     if (!message || !(message instanceof Message)) {
-        return console.log(colour('[Lixun] => There is not an instance or correct instance of a Discord Message'), { textColour: 'red' })
+        throw new Error('[Lixun] => There is not an instance or correct instance of a Discord Message')
     };
 
     if (!prefix || typeof prefix !== 'string') {
-        return console.log(colour('[Lixun] => There is not an instance of a prefix or the prefix is not a string'), { textColour: 'red'})
+        throw new Error('[Lixun] => There is not an instance of a prefix or the prefix is not a string')
     };
 
     if(!client.commands) {
-        return console.log(colour('[Lixun] => I cannot find your commands using \"client.commands\"'))
+        throw new Error('[Lixun] => I cannot find your commands using \"client.commands\"')
     };
 
     const cmd = client.commands.get(input.toLowerCase()) || client.commands.get(client.aliases.get(input.toLowerCase()))
