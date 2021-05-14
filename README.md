@@ -25,7 +25,7 @@ $ npm install recon-utility
 
 ## 🛠 Usages (Click on it for more info on how to use it)
 
--   [DaysAgo](https://www.npmjs.com/package/reconlx#daysago) - check how many days ago was it using date format
+-   [DaysAgo](https://www.npmjs.com/package/recon-utility#daysago) - check how many days ago was it using date format
 
 ## ✈ Importing
 
