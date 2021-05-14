@@ -5,13 +5,12 @@ const moment = require('moment');
  * A function to easily show how long someone joined the server
  * @param {Client} client - Your Discord Client
  * @param {GuildMember} user - The User To Find The Dayago Method For 
+ * @param {Message} message - Your Discord Message
  * @return {Message} Discord Message
  * @example daysAgo(client, user)
  */
 
-function daysAgo(client, user) { 
-
-    const message = Message
+function daysAgo(client, user, message) { 
 
     if (!client || !(client instanceof Client)) { 
         throw new Error('[Recon] => There is not an instance or correct instance of a Discord Client')
@@ -19,6 +18,10 @@ function daysAgo(client, user) {
 
     if (!user || !(user instanceof GuildMember)) {
         throw new Error('[Recon] => There is not an instance or correct instance of a GuildMember')
+    }
+
+    if (!message || !(message instanceof Message)) {
+        throw new Error('[Recon] => There is not an instance or correct instance of a Message')
     }
 
     if (!user || typeof user !== 'string') {
@@ -41,3 +44,5 @@ function daysAgo(client, user) {
         .setDescription(daysago)
     })
 }
+
+module.exports = daysAgo
