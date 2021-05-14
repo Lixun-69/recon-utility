@@ -36,7 +36,7 @@ function daysAgo(client, user, message) {
         })
     }
 
-    let daysago = moment(member.joinedAt).format('LL LTS')
+    let daysago = moment(user.joinedAt).format('LL LTS')
 
     return message.channel.send("", {
         embed: new MessageEmbed()
