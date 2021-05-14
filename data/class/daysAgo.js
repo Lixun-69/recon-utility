@@ -3,7 +3,6 @@ const moment = require('moment');
 
 /**
  * A function to easily show how long someone joined the server
- * @param {Client} client - Your Discord Client
  * @param {GuildMember} user - The User To Find The Dayago Method For 
  * @param {Message} message - Your Discord Message
  * @return {Message} Discord Message
