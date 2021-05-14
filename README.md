@@ -6,10 +6,7 @@ A simple API to shorten code with a Discord.JS V12.
 
 # 📝 Table of contents
 
--   [Installation](https://www.npmjs.com/package/reconlx#installation)
--   [Usages](https://www.npmjs.com/package/reconlx#-usages-click-on-it-for-more-info-on-how-to-use-it)
--   [Importing](https://www.npmjs.com/package/reconlx#-importing)
--   [Support](https://www.npmjs.com/package/reconlx#%E2%99%82%EF%B8%8F-support)
+-   [Importing](https://www.npmjs.com/package/recon-utility#-importing)
 -   [License](https://apache.org/licenses/LICENSE-2.0.html)
 
 ---
