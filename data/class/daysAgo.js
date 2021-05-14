@@ -9,11 +9,7 @@ const moment = require('moment');
  * @example daysAgo(client, user)
  */
 
-function daysAgo(client, user, message) { 
-
-    if (!client || !(client instanceof Client)) { 
-        throw new Error('[Recon] => There is not an instance or correct instance of a Discord Client')
-    }
+function daysAgo(user, message) { 
 
     if (!user || !(user instanceof GuildMember)) {
         throw new Error('[Recon] => There is not an instance or correct instance of a GuildMember')
