@@ -19,6 +19,9 @@ A simple API to shorten code with a Discord.JS V12.
 ```sh
 $ npm install recon-utility
 ```
+```sh
+$ npm install moment
+```
 
 ## 🛠 Usages (Click on it for more info on how to use it)
 
