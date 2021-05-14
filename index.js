@@ -1,1 +1,1 @@
-module.exports.customHelp = require('./data/class/customHelp');
+module.exports.daysAgo = require('./data/class/daysAgo');
