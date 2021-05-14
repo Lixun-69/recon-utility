@@ -34,11 +34,7 @@ function daysAgo(client, user, message) {
 
     let daysago = moment(user.joinedAt).format('LL LTS')
 
-    return message.channel.send("", {
-        embed: new MessageEmbed()
-        .setColor("BLACK")
-        .setDescription(daysago)
-    })
+    return daysago + (daysago == 1 ? " day" : " days") + " ago";
 }
 
-module.exports = daysAgo
+module.exports = daysAgo;
