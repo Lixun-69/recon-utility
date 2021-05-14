@@ -24,10 +24,6 @@ function daysAgo(client, user, message) {
         throw new Error('[Recon] => There is not an instance or correct instance of a Message')
     }
 
-    if (!user || typeof user !== 'string') {
-        throw new Error('[Recon] => There is not an instance of a user or user is not a string')
-    }
-
     if (!user.guild) {
         return message.channel.send("", {
             embed: new MessageEmbed()
